@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='freelancehunt' content='3178cd1ca4e4fe4'>
+    <title>MD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="script/anime.min.js"></script>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <header>
+        <div class="h-bg-mountains"></div>
+        <div class="h-bg">
+            <div class="h-wrap">
+                <div class="h-bg-line-wrap">
+                    <div class="h-bg-line"></div>
+                </div>
+                <div class="h-bg-osc">
+                    <svg width="360" height="234" viewBox="0 0 360 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 117, L180 117, V117, L360 117" stroke="white" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="h-fg">
+            <div class="h-wrap">
+                <img src="assets/MD.svg" alt="" style="width: 408px;height: 202px;user-select: none;-webkit-user-drag: none;">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="sec1">
+            <div class="sec1-wrap">
+                <div class="sec1-left">
+                    <h1>Hi.</h1>
+                    <h2>I am bouncytorch. I'm a web developer, and occasionally a musician.</h2>
+                </div>
+                <div class="sec1-right">
+                    <img src="assets/avatar.webp" alt="">
+                    <span style="font-family: Raleway; font-style: italic; font-weight: 200;">avatar by <a href="https://twitter.com/Grenn25" style="text-decoration: underline;" target="_blank">@Grenn25</a> on Twitter</span>
+                </div>
+            </div>
+        </div>
+        <div class="sec2">
+            <div class="wrap">
+                <div style="text-align: right;">
+                    <h3 style="width: 544px;">There's not much to see right now...</h3>
+                </div>
+                <div>
+                    <p style="width: 565px;">But soon enough I will have more projects to show. For now, I recommend checking out my social media.</p>
+                </div>
+                <div style="text-align: right;">
+                    <p style="width: 521px;">You probably stumbled upon my den by accident, even if really you did, thank you.</p>
+                </div>
+                <div>
+                    <p style="width: 561px;">I have a lot of experience in both web-dev and music, but I have yet to start a big project.</p>
+                </div>
+                <div style="text-align: right; margin-bottom: 0;">
+                    <p style="width: 440px;">If you want, you can proceed to my music and social media. Thank you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sec3">
+            <div class="wrap">
+                <div class="sec3-left">
+                    <h3>Music.</h3>
+                    <p>
+                        Most of my music is on my SoundCloud. Here you can listen to some of my works.
+                    </p>
+                </div>
+                <iframe width="600" height="630" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1335100033%3Fsecret_token%3Ds-8ePz0sDviSI&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrap">
+            <div class="foot-left">
+                <img src="assets/MD.svg" alt="" style="width: 179px;height: 89px;">
+                <span style="font-family: Roboto;font-style: normal;font-weight: normal;font-size: 12px;line-height: 28px;color: #525252;">© SLIPGATE 2020-2021.</span>
+            </div>
+            <div class="foot-right">
+                <ul>
+                    <li style="font-weight: bold;">My social media:</li>
+                    <li><a href="https://soundcloud.com/bouncytorch" target="_blank">SoundCloud</a></li>
+                    <li><a href="https://twitter.com/bouncytorch" target="_blank">Twitter</a></li>
+                    <li style="margin-bottom: 0;"><a href="https://steamcommunity.com/id/bouncytorch/" target="_blank">Steam</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    (() => {
+        const evalEl = 22;
+        const parEl = document.getElementsByClassName('h-bg-osc')[0];
+        let counter;
+        for (counter = 1; counter <= evalEl; counter++) {
+            const chilEl = parEl.getElementsByTagName('svg')[0].cloneNode(true);
+            parEl.append(chilEl);
+        }
+    })()
+    WebFont.load({
+        google: {
+            families: ['Raleway:normal,bold,italic,200', 'Roboto:normal,bold']
+        }
+    });
+    anime({
+        targets: '.h-bg-osc svg path',
+        d: [{
+            duration: 0,
+            value: 'M 0 117 C 0 117 90 117 180 117 C 270 117 270 117 360 117',
+        }, {
+            duration: 500,
+            value: 'M 0 0 C 90 0 90 234 180 234 C 270 234 270 0 360 0',
+            easing: 'easeOutQuint'
+        }, {
+            duration: 3000,
+            value: 'M 0 117 C 0 117 90 117 180 117 C 270 117 270 117 360 117',
+            easing: 'linear'
+        }, {
+            duration: 0,
+            value: 'M0 117, L180 117, V117, L360 117',
+        }, {
+            duration: 500,
+            value: 'M0 117, L180 0, V234, L360 117',
+            easing: 'easeOutQuint'
+        }, {
+            duration: 3000,
+            value: 'M0 117, L180 117, V117, L360 117',
+            easing: 'linear'
+        }, {
+            duration: 0,
+            value: 'M0 117, L90 117, L270 117, L360 117',
+        }, {
+            duration: 500,
+            value: 'M0 117, L90 0, L270 234, L360 117',
+            easing: 'easeOutQuint'
+        }, {
+            duration: 3000,
+            value: 'M0 117, L90 117, L270 117, L360 117',
+            easing: 'linear'
+        }, {
+            duration: 0,
+            value: 'M0 117, V117, H180, V117, H360, V117',
+        }, {
+            duration: 500,
+            value: 'M0 117, V0, H180, V234, H360, V117',
+            easing: 'easeOutQuint'
+        }, {
+            duration: 3000,
+            value: 'M0 117, V117, H180, V117, H360, V117',
+            easing: 'linear'
+        }, ],
+        duration: 0,
+        loop: true,
+    });
+    anime({
+        targets: '.h-bg-osc',
+        translateX: -720,
+        easing: 'linear',
+        duration: 3500,
+        loop: true
+    });
+</script>
+
+</html>
