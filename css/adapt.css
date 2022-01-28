@@ -9,6 +9,14 @@
 }
 
 @media screen and (max-width: 960px) {
+    .sec2-left > iframe {
+        width: 29.914529914529915vw !important;
+    height: 47vw !important;
+    }
+.sec2-right {
+    width: 42.73504273504273vw !important;
+}
+    
     footer {
         height: 32.142857142857146vw;
     }
@@ -139,6 +147,12 @@
 
     footer>.wrap {
         padding-bottom: 5vw;
+    }
+    .sec2-right > h3 {
+        width: 44.19047619047619vw !important;
+    }
+    .sec2 {
+        height: 48.717948717948715vw !important;
     }
 }
 
