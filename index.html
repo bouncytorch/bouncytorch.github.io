@@ -1,168 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='freelancehunt' content='3178cd1ca4e4fe4'>
-    <title>MD</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="script/anime.min.js"></script>
-    <link rel="stylesheet" href="css/master.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/master.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+	<script src="https://kit.fontawesome.com/9208530062.js" crossorigin="anonymous"></script>
+	<title>bouncytorch</title>
 </head>
-
 <body>
-    <header>
-        <div class="h-bg-mountains"></div>
-        <div class="h-bg">
-            <div class="h-wrap">
-                <div class="h-bg-line-wrap">
-                    <div class="h-bg-line"></div>
-                </div>
-                <div class="h-bg-osc">
-                    <svg width="360" height="234" viewBox="0 0 360 234" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 117, L180 117, V117, L360 117" stroke="white" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <div class="h-fg">
-            <div class="h-wrap">
-                <img src="assets/MD.svg" alt="" style="width: 408px;height: 202px;user-select: none;-webkit-user-drag: none;">
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="sec1">
-            <div class="sec1-wrap">
-                <div class="sec1-left">
-                    <h1>Hi.</h1>
-                    <h2>I am bouncytorch. I'm a web developer, and occasionally a musician.</h2>
-                </div>
-                <div class="sec1-right">
-                    <img src="assets/avatar.webp" alt="">
-                    <span style="font-family: Raleway; font-style: italic; font-weight: 200;">avatar by <a href="https://twitter.com/Grenn25" style="text-decoration: underline;" target="_blank">@Grenn25</a> on Twitter</span>
-                </div>
-            </div>
-        </div>
-        <div class="sec2">
-            <div class="wrap" style="display:flex; justify-content: space-between;">
-                <div class="sec2-left">
-                    <iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=3569593654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://bouncytorch.bandcamp.com/track/keep-it-basic">Keep It Basic by bouncytorch</a></iframe>
-                </div>
-                <div class="sec2-right" style="flex-direction: column; width:500px">
-                    <h3>Keep It Basic</h3>
-                    <p>
-                        My second big project this year! Inspired by HOME, this is more of an experiment with ZGameEditor, composition practice and my ability to fiddle with synths.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="supernova">
-            
-        </div>
-        <div class="sec3">
-            <div class="wrap">
-                <div class="sec3-left">
-                    <h3>Music.</h3>
-                    <p>
-                        Most of my music is on my SoundCloud. Here you can listen to some of my works.
-                    </p>
-                </div>
-                <iframe width="600" height="630" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1335100033%3Fsecret_token%3Ds-8ePz0sDviSI&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="wrap">
-            <div class="foot-left">
-                <img src="assets/MD.svg" alt="" style="width: 179px;height: 89px;">
-                <span style="font-family: Roboto;font-style: normal;font-weight: normal;font-size: 12px;line-height: 28px;color: #525252;">© SLIPGATE 2020-2021.</span>
-            </div>
-            <div class="foot-right">
-                <ul>
-                    <li style="font-weight: bold;">My social media:</li>
-                    <li><a href="https://soundcloud.com/bouncytorch" target="_blank">SoundCloud</a></li>
-                    <li><a href="https://twitter.com/bouncytorch" target="_blank">Twitter</a></li>
-                    <li style="margin-bottom: 0;"><a href="https://steamcommunity.com/id/bouncytorch/" target="_blank">Steam</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+	<header>
+		<div class="header-overlay"></div>
+		<div class="header-waveform-ref">
+			<svg width="975" height="1" viewBox="0 0 975 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<line y1="0.5" x2="975" y2="0.5" stroke="white" stroke-opacity="0.5" stroke-dasharray="1 1"/>
+			</svg>
+		</div>
+		<img src="./pictures/logo.svg" style="width: 139px; height: 69px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		<div class="header-waveform">
+			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path id="double-wave" d="M0 0C48.75 0 48.75 140 97.5 140 146.25 140 146.25 0 195 0 243.75 0 243.75 140 292.5 140 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+				</defs>
+				<use xlink:href="#double-wave" x="0" y="0">
+					<animate attributeName="x" from="0" to="-195" dur="3s"
+							 repeatCount="indefinite"/>
+				</use>
+			</svg>
+			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+				</defs>
+				<use xlink:href="#double-wave" x="0" y="0">
+					<animate attributeName="x" from="0" to="-195" dur="3s"
+							 repeatCount="indefinite"/>
+				</use>
+			</svg>
+			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+				</defs>
+				<use xlink:href="#double-wave" x="0" y="0">
+					<animate attributeName="x" from="0" to="-195" dur="3s"
+							 repeatCount="indefinite"/>
+				</use>
+			</svg>
+			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+				</defs>
+				<use xlink:href="#double-wave" x="0" y="0">
+					<animate attributeName="x" from="0" to="-195" dur="3s"
+							 repeatCount="indefinite"/>
+				</use>
+			</svg>
+			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+				</defs>
+				<use xlink:href="#double-wave" x="0" y="0">
+					<animate attributeName="x" from="0" to="-195" dur="3s" repeatCount="indefinite"/>
+				</use>
+			</svg>
+		</div>
+	</header>
+	<main>
+		<section class="sec1" style="padding: 42px 55px; display: flex;
+		flex-direction: column;
+		justify-content: space-between; background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 51.04%, rgba(237, 237, 237, 0.25) 100%);">
+			<div class="sec1top" style="width: 400px;">
+				<h1>bouncytorch</h1>
+				<h2 style="width: 467px; margin-bottom: 3px;">electronica, orchestral, and fusion composer. web developer (node.js)<br>
+				aspiring sound designer and game developer</h2>
+				<div class="secbuttons" style="display: flex;">
+					<a href="mailto:bouncytorch@gmail.com"><div class="link-button"><i class="fa-solid fa-envelope"></i></div></a>
+					<a href="https://youtube.com/@bouncytorch" target="_blank"><div class="link-button"><i class="fa-brands fa-youtube"></i></div></a>
+					<a href="https://soundcloud.com/bouncytorch" target="_blank"><div class="link-button"><i class="fa-brands fa-soundcloud"></i></div></a>
+					<a href="https://bouncytorch.bandcamp.com/" target="_blank"><div class="link-button"><i class="fa-brands fa-bandcamp"></i></div></a>
+					<a href="https://open.spotify.com/artist/41ryjxYFqikzeC3wzKfSkS" target="_blank"><div class="link-button"><i class="fa-brands fa-spotify"></i></div></a>
+					<a href="https://music.apple.com/mw/artist/bouncytorch/1614632135" target="_blank"><div class="link-button"><i class="fa-brands fa-apple"></i></div></a>
+					<a href="https://github.com/bouncytorch" target="_blank"><div class="link-button"><i class="fa-brands fa-github"></i></div></a>
+					<a href="https://twitter.com/bouncytorch" target="_blank"><div class="link-button"><i class="fa-brands fa-twitter"></i></div></a>
+				</div>
+			</div>
+			<div class="sec1bottom">
+				<h2 style="margin-bottom:3px">and the second most important person at Auri Media Group</h2>
+				<div class="secbuttons" style="display: flex; width: 87px;">
+					<a href="mailto:aurimediagroup@gmail.com"><div class="link-button"><i class="fa-solid fa-envelope"></i></div></a>
+					<a href="https://twitter.com/aurimediagroup" target="_blank"><div class="link-button"><i class="fa-brands fa-twitter"></i></div></a>
+				</div>
+			</div>
+		</section>
+		<section class="sec2" style="padding: 34px 55px; height:826px; display:flex; flex-direction: column; justify-content: space-between;">
+			<h1>the music</h1>
+			<div class="sec2-1">
+				<div class="album album-big"><img src="https://f4.bcbits.com/img/a2579462828_10.jpg" alt="supernova">minecraft - supernova</div>
+				<div class="album album-big"><img src="https://f4.bcbits.com/img/a2783954745_10.jpg" alt="keep it basic">keep it basic</div>
+				<div class="album album-big"><img style="background-color: #D9D9D9" src="" alt="">(work in progress)</div>
+			</div>
+			<div class="sec2-2">
+				<div class="album album-small"><img style="background-color: #D9D9D9" src="" alt="">sketches & outdated <br>material</div>
+				<div class="album album-small"><img src="https://f4.bcbits.com/img/a2973593912_10.jpg" alt="">transition</div>
+				<div class="album album-small"><img src="https://f4.bcbits.com/img/a0772671997_10.jpg" alt="">apathetic</div>
+				<div class="album album-small"><img src="https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/50/71/96/50719691-479b-8386-4505-bf56d33adac1/5063112156428_cover.jpg/316x316bb.webp" alt="">singularity/ftest2</div>
+				<div class="album album-small"><img src="https://f4.bcbits.com/img/a3152292924_16.jpg" alt="">21/24</div>
+				<div class="album album-small"><img src="https://i1.sndcdn.com/artworks-iDsyP37F3TyqzCdp-RnZG9A-t500x500.jpg" alt="">spring escape</div>
+			</div>
+			<div class="sec2-3">
+				<div class="album album-embed">
+					<iframe width="410" height="230" src="https://www.youtube.com/embed/sOWHZb_jKQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					minecraft - supernova (trailer)
+				</div>
+				<div class="album album-embed">
+					<iframe width="410" height="230" src="https://www.youtube.com/embed/cQPr88qX4D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					keep it basic (zge visualization)
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		(C) 2022 Auri Media Group.
+	</footer>
+	<script>
+		anime({
+			targets: '.header-waveform svg defs path',
+			d: [
+				// sine
+				{ value: 'M0 70C48.75 70 48.75 70 97.5 70 146.25 70 146.25 70 195 70 243.75 70 243.75 70 292.5 70 341.25 70 341.25 70 390 70', duration: 0, easing: 'linear' },
+				{ value: 'M0 0C48.75 0 48.75 140 97.5 140 146.25 140 146.25 0 195 0 243.75 0 243.75 140 292.5 140 341.25 140 341.25 0 390 0', duration: 500, easing: 'easeOutCubic' },
+				{ value: 'M0 70C48.75 70 48.75 70 97.5 70 146.25 70 146.25 70 195 70 243.75 70 243.75 70 292.5 70 341.25 70 341.25 70 390 70', duration: 3000, easing: 'linear' },
+			
+				// pulse 
+				{ value: 'M0 70H48.75V70H146.25V70H243.75V70H341.25V70H390', duration: 0, easing: 'linear' },
+				{ value: 'M0 0H48.75V140H146.25V0H243.75V140H341.25V0H390', duration: 500, easing: 'easeOutCubic' },
+				{ value: 'M0 70H48.75V70H146.25V70H243.75V70H341.25V70H390', duration: 3000, easing: 'linear' },
+
+				// triangle 
+				{ value: 'M0 70 97.5 70 195 70 292.5 70 390 70', duration: 0, easing: 'linear' },
+				{ value: 'M0 0 97.5 140 195 0 292.5 140 390 0', duration: 500, easing: 'easeOutCubic' },
+				{ value: 'M0 70 97.5 70 195 70 292.5 70 390 70', duration: 3000, easing: 'linear' },
+
+				// saw 
+				{ value: 'M0 70 195 70V70L390 70V70', duration: 0, easing: 'linear' },
+				{ value: 'M0 0 195 140V0L390 140V0', duration: 500, easing: 'easeOutCubic' },
+				{ value: 'M0 70 195 70V70L390 70V70', duration: 3000, easing: 'linear' }
+			],
+			loop: true
+		});
+	</script>
 </body>
-
-<script>
-    (() => {
-        const evalEl = 22;
-        const parEl = document.getElementsByClassName('h-bg-osc')[0];
-        let counter;
-        for (counter = 1; counter <= evalEl; counter++) {
-            const chilEl = parEl.getElementsByTagName('svg')[0].cloneNode(true);
-            parEl.append(chilEl);
-        }
-    })()
-    WebFont.load({
-        google: {
-            families: ['Raleway:normal,bold,italic,200', 'Roboto:normal,bold']
-        }
-    });
-    anime({
-        targets: '.h-bg-osc svg path',
-        d: [{
-            duration: 0,
-            value: 'M 0 117 C 0 117 90 117 180 117 C 270 117 270 117 360 117',
-        }, {
-            duration: 500,
-            value: 'M 0 0 C 90 0 90 234 180 234 C 270 234 270 0 360 0',
-            easing: 'easeOutQuint'
-        }, {
-            duration: 3000,
-            value: 'M 0 117 C 0 117 90 117 180 117 C 270 117 270 117 360 117',
-            easing: 'linear'
-        }, {
-            duration: 0,
-            value: 'M0 117, L180 117, V117, L360 117',
-        }, {
-            duration: 500,
-            value: 'M0 117, L180 0, V234, L360 117',
-            easing: 'easeOutQuint'
-        }, {
-            duration: 3000,
-            value: 'M0 117, L180 117, V117, L360 117',
-            easing: 'linear'
-        }, {
-            duration: 0,
-            value: 'M0 117, L90 117, L270 117, L360 117',
-        }, {
-            duration: 500,
-            value: 'M0 117, L90 0, L270 234, L360 117',
-            easing: 'easeOutQuint'
-        }, {
-            duration: 3000,
-            value: 'M0 117, L90 117, L270 117, L360 117',
-            easing: 'linear'
-        }, {
-            duration: 0,
-            value: 'M0 117, V117, H180, V117, H360, V117',
-        }, {
-            duration: 500,
-            value: 'M0 117, V0, H180, V234, H360, V117',
-            easing: 'easeOutQuint'
-        }, {
-            duration: 3000,
-            value: 'M0 117, V117, H180, V117, H360, V117',
-            easing: 'linear'
-        }, ],
-        duration: 0,
-        loop: true,
-    });
-    anime({
-        targets: '.h-bg-osc',
-        translateX: -720,
-        easing: 'linear',
-        duration: 3500,
-        loop: true
-    });
-</script>
-
 </html>
