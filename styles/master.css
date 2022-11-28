@@ -1,2 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import './index.css'
+@import './index.css';
+@import './header.css';
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: rgb(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    border: 5px solid transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-clip: content-box;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(20, 20, 20, 0.7);
+}
