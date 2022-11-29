@@ -1,0 +1,20 @@
+
+h1 {
+	margin-bottom: 5px;
+}
+section > div {
+	justify-content: space-between;
+}
+.left {
+	margin-right: 50px;
+}
+.left > img {
+	display: block;
+	width: 250px;
+	height: 250px;
+	margin-bottom: 5px;
+}
+.right > pre {
+	white-space: pre-wrap;
+	max-width: 365px;
+}

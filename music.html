@@ -1,107 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<script class="query-processor">
-		const head = document.getElementsByTagName('head')[0];
-		head.removeChild(head.getElementsByClassName('query-processor')[0]);
-	</script>
+	<link rel="stylesheet" href="./styles/master.css">
+	<link rel="stylesheet" href="./styles/music/main.css">
+	<link rel="stylesheet" href="./styles/music/adapt.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+	<script src="https://kit.fontawesome.com/9208530062.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<header>
 		<div class="header-overlay"></div>
 		<div class="header-waveform-ref">
 			<svg width="975" height="1" viewBox="0 0 975 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<line y1="0.5" x2="975" y2="0.5" stroke="white" stroke-opacity="0.5" stroke-dasharray="1 1"/>
+				<line y1="0.5" x2="975" y2="0.5" stroke="white" stroke-opacity="0.5" stroke-dasharray="1 1" />
 			</svg>
 		</div>
-		<img src="./pictures/logo.svg" style="width: 139px; height: 69px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		<img src="./pictures/logo.svg"
+			style="background: none; width: 139px; height: 69px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 		<div class="header-waveform">
 			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<defs>
-					<path id="double-wave" d="M0 0C48.75 0 48.75 140 97.5 140 146.25 140 146.25 0 195 0 243.75 0 243.75 140 292.5 140 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					<path id="double-wave"
+						d="M0 0C48.75 0 48.75 140 97.5 140 146.25 140 146.25 0 195 0 243.75 0 243.75 140 292.5 140 341.25 140 341.25 0 390 0"
+						stroke="white" stroke-width="0.5" />
 				</defs>
 				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s"
-							 repeatCount="indefinite"/>
+					<animate attributeName="x" from="0" to="-195" dur="3s" repeatCount="indefinite" />
 				</use>
 			</svg>
 			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<defs>
-					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					<path id="double-wave"
+						d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0"
+						stroke="white" stroke-width="0.5" />
 				</defs>
 				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s"
-							 repeatCount="indefinite"/>
+					<animate attributeName="x" from="0" to="-195" dur="3s" repeatCount="indefinite" />
 				</use>
 			</svg>
 			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<defs>
-					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					<path id="double-wave"
+						d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0"
+						stroke="white" stroke-width="0.5" />
 				</defs>
 				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s"
-							 repeatCount="indefinite"/>
+					<animate attributeName="x" from="0" to="-195" dur="3s" repeatCount="indefinite" />
 				</use>
 			</svg>
 			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<defs>
-					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					<path id="double-wave"
+						d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0"
+						stroke="white" stroke-width="0.5" />
 				</defs>
 				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s"
-							 repeatCount="indefinite"/>
+					<animate attributeName="x" from="0" to="-195" dur="3s" repeatCount="indefinite" />
 				</use>
 			</svg>
 			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<defs>
-					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					<path id="double-wave"
+						d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0"
+						stroke="white" stroke-width="0.5" />
 				</defs>
 				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s" repeatCount="indefinite"/>
+					<animate attributeName="x" from="0" to="-195" dur="3s" repeatCount="indefinite" />
 				</use>
 			</svg>
 		</div>
 	</header>
 	<main>
-		<section style="display: flex; justify-content: space-between;">
-			<h2></h2>
-			<div></div>
-			<div></div>
+		<section style="display: flex; flex-direction: column;">
+			<h1></h1>
+			<div style="display: flex;">
+				<div class="left">
+					<img src="" alt="">
+					<div class="classicButtons-small"></div>
+				</div>
+				<div class="right">
+					<pre></pre>
+				</div>
+			</div>
 		</section>
 	</main>
 	<footer>
 		(C) 2022 Auri Media Group.
 	</footer>
+	<script class="query-processor">
+		const query = (new URLSearchParams(window.location.search)).get('p');
+		console.log(query);
+		const list = {
+			none: {
+				name: '',
+				description: '',
+				links: [{}],
+				image: {alt: '', l: ''}
+			},
+			err: {
+				name: 'dynamic page',
+				description: 'This is the default album/single info page. <br>Nothing  to see here. Use query.',
+				links: [{i: "fa-solid fa-circle-exclamation", l: '#'}],
+				image: {alt: 'Default image. Nothing to see here.', l: '#'}
+			},
+			"minecraft-supernova" : {
+				name: "minecraft - supernova",
+				description: "\t<b>Minecraft - Supernova</b> is an attempt of recreating C418's style of <i>Minecraft: Volume Alpha</i> & <i>Volume Beta</i>.<br>\tA silly passion project in order to pay tribute to one of the most influencial game soundtracks, and simultaneously a big part of my childhood. <br>yes c418 discord, nosolgy.<br><br>\t<b>List of tracks:</b><ol type=\"1\"><li>K (disc1.ogg)</li><li>Jang (title1.ogg)</li><li>Burning Konkrete (creative1.ogg)</li><li>Cliff Hanger (survival2.ogg)</li><li>Albeit (underwater1.ogg)</li><li>Supernova (disc2.ogg)</li><li>Rose Field (survival1.ogg)</li></ol><br><br><iframe style=\"max-width: 365px;\" width=\"100%\" height=\"205px\" src=\"https://www.youtube.com/embed/sOWHZb_jKQ4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+				links: [
+					{i: 'fa-brands fa-bandcamp', l: 'https://bouncytorch.bandcamp.com/album/minecraft-supernova'},
+					{i: 'fa-brands fa-spotify', l: 'https://open.spotify.com/album/6cV9FbCaY2zDAzSCDczllM'},
+					{i: 'fa-brands fa-soundcloud', l: 'https://soundcloud.com/bouncytorch/sets/minecraft-supernova'},
+					{i: 'fa-brands fa-apple', l: 'https://music.apple.com/kw/album/supernova/1618460153'},
+					{i: 'fa-brands fa-youtube', l: 'https://www.youtube.com/watch?v=sOWHZb_jKQ4'},
+					{i: 'fa-solid fa-earth-americas', l: 'https://www.youtube.com/watch?v=sOWHZb_jKQ4'},
+				],
+				image: {alt: "supernova", l: "https://f4.bcbits.com/img/a2579462828_10.jpg"}
+			}
+		}
+		function createElementFromHTML(htmlString) {
+			var div = document.createElement('div');
+			div.innerHTML = htmlString.trim();
+			return div.children[0];
+		}
+		function processQuery(o) {
+			document.getElementsByTagName('h1')[0].innerText = o.name;
+			const path1 = document.getElementsByTagName('section')[0].children[1].children[0];
+			const path2 = document.getElementsByTagName('section')[0].children[1].children[1];
+			path1.children[0].setAttribute('alt', o.image.alt);
+			path1.children[0].setAttribute('src', o.image.l)
+			o.links.forEach((link) => {
+				const el = createElementFromHTML('<a ><div><i class=""></i></div></a>');
+				el.setAttribute('href', link.l);
+				el.children[0].children[0].classList = link.i;
+				path1.getElementsByClassName('classicButtons-small')[0].append(el);
+			});
+			path2.getElementsByTagName('pre')[0].innerHTML = o.description;
+		}
+		if (!query || !list[query]) {
+			processQuery(list["err"])
+		}
+		else { 
+			processQuery(list[query])
+		}
+		document.body.removeChild(document.getElementsByClassName('query-processor')[0]);
+	</script>
 	<script>
 		anime({
 			targets: '.header-waveform svg defs path',
 			d: [
 				// sine
-				{ value: 'M0 70C48.75 70 48.75 70 97.5 70 146.25 70 146.25 70 195 70 243.75 70 243.75 70 292.5 70 341.25 70 341.25 70 390 70', duration: 0, easing: 'linear' },
-				{ value: 'M0 0C48.75 0 48.75 140 97.5 140 146.25 140 146.25 0 195 0 243.75 0 243.75 140 292.5 140 341.25 140 341.25 0 390 0', duration: 500, easing: 'easeOutCubic' },
-				{ value: 'M0 70C48.75 70 48.75 70 97.5 70 146.25 70 146.25 70 195 70 243.75 70 243.75 70 292.5 70 341.25 70 341.25 70 390 70', duration: 3000, easing: 'linear' },
-			
+				{
+					value: 'M0 70C48.75 70 48.75 70 97.5 70 146.25 70 146.25 70 195 70 243.75 70 243.75 70 292.5 70 341.25 70 341.25 70 390 70',
+					duration: 0,
+					easing: 'linear'
+				},
+				{
+					value: 'M0 0C48.75 0 48.75 140 97.5 140 146.25 140 146.25 0 195 0 243.75 0 243.75 140 292.5 140 341.25 140 341.25 0 390 0',
+					duration: 500,
+					easing: 'easeOutCubic'
+				},
+				{
+					value: 'M0 70C48.75 70 48.75 70 97.5 70 146.25 70 146.25 70 195 70 243.75 70 243.75 70 292.5 70 341.25 70 341.25 70 390 70',
+					duration: 3000,
+					easing: 'linear'
+				},
+
 				// pulse 
-				{ value: 'M0 70H48.75V70H146.25V70H243.75V70H341.25V70H390', duration: 0, easing: 'linear' },
-				{ value: 'M0 0H48.75V140H146.25V0H243.75V140H341.25V0H390', duration: 500, easing: 'easeOutCubic' },
-				{ value: 'M0 70H48.75V70H146.25V70H243.75V70H341.25V70H390', duration: 3000, easing: 'linear' },
+				{
+					value: 'M0 70H48.75V70H146.25V70H243.75V70H341.25V70H390',
+					duration: 0,
+					easing: 'linear'
+				},
+				{
+					value: 'M0 0H48.75V140H146.25V0H243.75V140H341.25V0H390',
+					duration: 500,
+					easing: 'easeOutCubic'
+				},
+				{
+					value: 'M0 70H48.75V70H146.25V70H243.75V70H341.25V70H390',
+					duration: 3000,
+					easing: 'linear'
+				},
 
 				// triangle 
-				{ value: 'M0 70 97.5 70 195 70 292.5 70 390 70', duration: 0, easing: 'linear' },
-				{ value: 'M0 0 97.5 140 195 0 292.5 140 390 0', duration: 500, easing: 'easeOutCubic' },
-				{ value: 'M0 70 97.5 70 195 70 292.5 70 390 70', duration: 3000, easing: 'linear' },
+				{
+					value: 'M0 70 97.5 70 195 70 292.5 70 390 70',
+					duration: 0,
+					easing: 'linear'
+				},
+				{
+					value: 'M0 0 97.5 140 195 0 292.5 140 390 0',
+					duration: 500,
+					easing: 'easeOutCubic'
+				},
+				{
+					value: 'M0 70 97.5 70 195 70 292.5 70 390 70',
+					duration: 3000,
+					easing: 'linear'
+				},
 
 				// saw 
-				{ value: 'M0 70 195 70V70L390 70V70', duration: 0, easing: 'linear' },
-				{ value: 'M0 0 195 140V0L390 140V0', duration: 500, easing: 'easeOutCubic' },
-				{ value: 'M0 70 195 70V70L390 70V70', duration: 3000, easing: 'linear' }
+				{
+					value: 'M0 70 195 70V70L390 70V70',
+					duration: 0,
+					easing: 'linear'
+				},
+				{
+					value: 'M0 0 195 140V0L390 140V0',
+					duration: 500,
+					easing: 'easeOutCubic'
+				},
+				{
+					value: 'M0 70 195 70V70L390 70V70',
+					duration: 3000,
+					easing: 'linear'
+				}
 			],
 			loop: true
 		});
 	</script>
+
 </body>
+
 </html>

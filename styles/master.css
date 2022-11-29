@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import './index.css';
 @import './header.css';
+@font-face {
+	font-family: MS PGothic;
+	src: url(/fonts/ms-pgothic.ttf);
+}
+@font-face {
+	font-family: MS Reference Sans Serif;
+	src: url(/fonts/REFSANB.TTF);
+}
 
 ::-webkit-scrollbar {
     width: 15px;
     background: rgb(255, 255, 255, 0.3);
 }
-
 ::-webkit-scrollbar-thumb {
     border-radius: 30px;
     border: 5px solid transparent;
@@ -15,11 +21,107 @@
     transition-timing-function: ease-out;
     transition-duration: 0.3s;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 ::-webkit-scrollbar-thumb:active {
     background-color: rgba(20, 20, 20, 0.7);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	font-family: "MS PGothic"
+}
+html {
+	background-color: #F6F6F6;
+}
+body {
+	min-height: 100px;
+	max-width: 975px;
+	background-color: #FFFFFF;
+    margin: auto;
+}
+header {
+	overflow: hidden;
+}
+section {
+	padding: 34px 55px; 
+}
+
+h1 {
+	font-family: 'MS Reference Sans Serif';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+}
+h2 {
+	font-family: 'MS PGothic';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+}
+img {
+	background-color: #D9D9D9
+}
+
+.classicButtons-small {
+	display: flex;
+	justify-content: space-between;
+	user-select: none;
+}
+.classicButtons-small a {
+	text-decoration: none;
+}
+.classicButtons-small a div {
+	stroke: 1px #D9D9D9;
+	background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F6 100%);
+	border: 1px solid #D9D9D9;
+	border-radius: 7px;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.classicButtons-small a div:active {
+	background: linear-gradient(180deg, #F6F6F6 0%, #FFFFFF 100%);
+}
+.classicButtons-small a div i {
+	font-size: 20px;
+	line-height: 20px;
+	color: #000000;
+}
+
+.album {
+	display:flex;
+	flex-direction: column;
+}
+.album-big img {
+	width: 258px;
+	height: 258px;
+}
+.album-big {
+	font-size: 20px;
+}
+.album-small img {
+	width: 106px;
+	height: 106px;
+}
+.album-small {
+	font-size: 12px;
+}
+
+.sec2 * {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.sec2 * * {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }

@@ -1,0 +1,25 @@
+@media screen and (max-width: 650px) {
+	h1 {
+		max-width: 250px;
+	}
+	section {
+		align-items: center;
+	}
+	section > div {
+		flex-direction: column;
+		max-width: 250px;
+	}
+	.left {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	iframe {
+		height: 100%;
+	}
+}
+@media screen and (max-width: 375px) {
+	section {
+		align-items: center;
+		padding: 34px 0px;
+	}
+}
