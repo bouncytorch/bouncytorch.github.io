@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import './header.css';
 @font-face {
-	font-family: MS Gothic;
+	font-family: 'MS PGothic';
 	src: url(/fonts/ms-pgothic.ttf);
 }
 @font-face {
-	font-family: MS Reference Sans Serif;
+	font-family: 'MS Reference Sans Serif';
 	src: url(/fonts/REFSANB.TTF);
 }
 
@@ -58,7 +58,6 @@ h1 {
 	line-height: 24px;
 }
 h2 {
-	font-family: 'MS Gothic';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
