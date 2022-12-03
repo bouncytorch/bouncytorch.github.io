@@ -4,98 +4,104 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles/master.css">
-	<link rel="stylesheet" href="./styles/index/main.css">
+	<link rel="stylesheet" href="./assets/styles/master.css">
+	<link rel="stylesheet" href="./assets/styles/index/adapt.css">
+	<link rel="stylesheet" href="./assets/styles/index/main.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 	<script src="https://kit.fontawesome.com/9208530062.js" crossorigin="anonymous"></script>
 	<title>bouncytorch</title>
 </head>
 <body>
 	<header>
-		<div class="header-overlay"></div>
-		<div class="header-waveform-ref">
-			<svg width="975" height="1" viewBox="0 0 975 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<line y1="0.5" x2="975" y2="0.5" stroke="white" stroke-opacity="0.5" stroke-dasharray="1 1"/>
-			</svg>
-		</div>
-		<img src="./pictures/logo.svg" style=" background: none; width: 139px; height: 69px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-		<div class="header-waveform">
-			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<path id="double-wave" d="M0 0C48.75 0 48.75 140 97.5 140 146.25 140 146.25 0 195 0 243.75 0 243.75 140 292.5 140 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
-				</defs>
-				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s"
-							 repeatCount="indefinite"/>
-				</use>
-			</svg>
-			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
-				</defs>
-				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s"
-							 repeatCount="indefinite"/>
-				</use>
-			</svg>
-			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
-				</defs>
-				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s"
-							 repeatCount="indefinite"/>
-				</use>
-			</svg>
-			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
-				</defs>
-				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s"
-							 repeatCount="indefinite"/>
-				</use>
-			</svg>
-			<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
-				</defs>
-				<use xlink:href="#double-wave" x="0" y="0">
-					<animate attributeName="x" from="0" to="-195" dur="3s" repeatCount="indefinite"/>
-				</use>
-			</svg>
-		</div>
+		<a href="./">
+			<div class="header-overlay"></div>
+			<div class="header-waveform-ref">
+				<svg width="975" height="1" viewBox="0 0 975 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line y1="0.5" x2="975" y2="0.5" stroke="white" stroke-opacity="0.5" stroke-dasharray="1 1"/>
+				</svg>
+			</div>
+			<img src="./assets/pictures/logo.svg" style=" background: none; width: 139px; height: 69px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+			<div class="header-waveform">
+				<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<path id="double-wave" d="M0 0C48.75 0 48.75 140 97.5 140 146.25 140 146.25 0 195 0 243.75 0 243.75 140 292.5 140 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					</defs>
+					<use xlink:href="#double-wave" x="0" y="0">
+						<animate attributeName="x" from="0" to="-195" dur="3s"
+								repeatCount="indefinite"/>
+					</use>
+				</svg>
+				<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					</defs>
+					<use xlink:href="#double-wave" x="0" y="0">
+						<animate attributeName="x" from="0" to="-195" dur="3s"
+								repeatCount="indefinite"/>
+					</use>
+				</svg>
+				<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					</defs>
+					<use xlink:href="#double-wave" x="0" y="0">
+						<animate attributeName="x" from="0" to="-195" dur="3s"
+								repeatCount="indefinite"/>
+					</use>
+				</svg>
+				<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					</defs>
+					<use xlink:href="#double-wave" x="0" y="0">
+						<animate attributeName="x" from="0" to="-195" dur="3s"
+								repeatCount="indefinite"/>
+					</use>
+				</svg>
+				<svg width="195" height="142" viewBox="0 -1 195 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<path id="double-wave" d="M 0 0 C 48.75 0 48.75 140 97.5 140 C 146.25 140 146.25 0 195 0 C 243.75 0 243.75 140 292.5 140 C 341.25 140 341.25 0 390 0" stroke="white" stroke-width="0.5"/>
+					</defs>
+					<use xlink:href="#double-wave" x="0" y="0">
+						<animate attributeName="x" from="0" to="-195" dur="3s" repeatCount="indefinite"/>
+					</use>
+				</svg>
+			</div>
+		</a>
 	</header>
 	<main>
-		<section style="padding: 42px 55px; display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 51.04%, rgba(237, 237, 237, 0.25) 100%);">
-			<div style="width: 400px;">
-				<h1>bouncytorch</h1>
-				<h2 style="width: 552px; margin-bottom: 3px;">electronica, orchestral, and fusion composer. web developer (node.js)<br>
-				aspiring sound designer and game developer</h2>
-				<div class="classicButtons-small">
-					<a href="mailto:bouncytorch@gmail.com"><div><i class="fa-solid fa-envelope"></i></div></a>
-					<a href="https://youtube.com/@bouncytorch" target="_blank"><div><i class="fa-brands fa-youtube"></i></div></a>
-					<a href="https://soundcloud.com/bouncytorch" target="_blank"><div><i class="fa-brands fa-soundcloud"></i></div></a>
-					<a href="https://bouncytorch.bandcamp.com/" target="_blank"><div><i class="fa-brands fa-bandcamp"></i></div></a>
-					<a href="https://open.spotify.com/artist/41ryjxYFqikzeC3wzKfSkS" target="_blank"><div><i class="fa-brands fa-spotify"></i></div></a>
-					<a href="https://music.apple.com/mw/artist/bouncytorch/1614632135" target="_blank"><div><i class="fa-brands fa-apple"></i></div></a>
-					<a href="https://github.com/bouncytorch" target="_blank"><div><i class="fa-brands fa-github"></i></div></a>
-					<a href="https://twitter.com/bouncytorch" target="_blank"><div><i class="fa-brands fa-twitter"></i></div></a>
+		<section class="about">
+			<div class="about-top" style="margin-right:10px">
+				<div>
+					<h1>bouncytorch</h1>
+					<h2 style="margin-bottom: 3px;">electronica, orchestral, and fusion composer. web developer (node.js)<br>
+					aspiring sound designer and game developer</h2>
+					<div class="classicButtons-small">
+						<a href="mailto:bouncytorch@gmail.com"><div><i class="fa-solid fa-envelope"></i></div></a>
+						<a href="https://youtube.com/@bouncytorch" target="_blank"><div><i class="fa-brands fa-youtube"></i></div></a>
+						<a href="https://soundcloud.com/bouncytorch" target="_blank"><div><i class="fa-brands fa-soundcloud"></i></div></a>
+						<a href="https://bouncytorch.bandcamp.com/" target="_blank"><div><i class="fa-brands fa-bandcamp"></i></div></a>
+						<a href="https://open.spotify.com/artist/41ryjxYFqikzeC3wzKfSkS" target="_blank"><div><i class="fa-brands fa-spotify"></i></div></a>
+						<a href="https://music.apple.com/mw/artist/bouncytorch/1614632135" target="_blank"><div><i class="fa-brands fa-apple"></i></div></a>
+						<a href="https://github.com/bouncytorch" target="_blank"><div><i class="fa-brands fa-github"></i></div></a>
+						<a href="https://twitter.com/bouncytorch" target="_blank"><div><i class="fa-brands fa-twitter"></i></div></a>
+					</div>
+				</div>
+				<div>
+					<h2 style="margin-bottom:3px">and the second most important person at Auri Media Group</h2>
+					<div class="classicButtons-small" style="width: 87px;">
+						<a href="mailto:aurimediagroup@gmail.com"><div><i class="fa-solid fa-envelope"></i></div></a>
+						<a href="https://twitter.com/aurimediagroup" target="_blank"><div><i class="fa-brands fa-twitter"></i></div></a>
+					</div>
 				</div>
 			</div>
-			<div>
-				<h2 style="margin-bottom:3px">and the second most important person at Auri Media Group</h2>
-				<div class="classicButtons-small" style="width: 87px;">
-					<a href="mailto:aurimediagroup@gmail.com"><div><i class="fa-solid fa-envelope"></i></div></a>
-					<a href="https://twitter.com/aurimediagroup" target="_blank"><div><i class="fa-brands fa-twitter"></i></div></a>
-				</div>
-			</div>
+			<div class="about-bottom"><img src="./assets/avatar.webp" alt=""></div>
 		</section>
-		<section class="sec2" style="min-height:826px; display:flex; flex-direction: column; justify-content: space-between;">
+		<!-- <section class="sec2" style="min-height:826px; display:flex; flex-direction: column; justify-content: space-between;">
 			<h1>the music</h1>
 			<div>
 				<a href="/music.html?p=minecraft-supernova" target="_blank"><div class="album album-big"><img src="https://f4.bcbits.com/img/a2579462828_10.jpg" alt="supernova">minecraft - supernova</div></a>
-				<a href="/music.html?p=keep-it-basic"><div class="album album-big"><img src="https://f4.bcbits.com/img/a2783954745_10.jpg" alt="keep it basic">keep it basic</div></a>
+				<a href="/music.html?p=keep-it-basic"><div class="album album-big"><img src="https://f4.bcbits.com/img/a2783954745_10.jpg" alt="keep it basic">keep it basic</div><span style="opacity:50%; font-size:12px; color:black; text-decoration: none;">electronic, dance, synthwave</span></a>
 				<div class="album album-big"><img src="" alt="">(work in progress)</div>
 			</div>
 			<div>
@@ -116,7 +122,7 @@
 					keep it basic (zge visualization)
 				</div>
 			</div>
-		</section>
+		</section> -->
 	</main>
 	<footer>
 		(C) 2022 Auri Media Group.

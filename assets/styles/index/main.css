@@ -1,0 +1,15 @@
+section.about {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 42px 55px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 51.04%, rgba(237, 237, 237, 0.25) 100%);
+}
+
+h2 {
+	max-width: 552px;
+}
+
+.classicButtons-small {
+	max-width: 398px;
+}

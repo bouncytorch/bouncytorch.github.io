@@ -1,0 +1,8 @@
+@media screen and (max-width: 660px) {
+	.about-bottom > img {
+		display: none;
+	}
+	.about {
+		padding: 25px 30px;
+	}
+}
