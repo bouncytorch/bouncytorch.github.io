@@ -1,8 +1,114 @@
+@media screen and (max-width: 952px) {
+	.album-big img {
+		width: 170px;
+		height: 170px;
+	}
+	.album-small img {
+		width: 170px;
+		height: 170px;
+	}
+	.album-big {
+		font-size: 12px;
+		max-width: 170px;
+	}
+	.album > p {
+		display: none;
+	}
+	.music {
+		max-width: 750px;
+		margin: auto;
+	}
+	.music > div > * {
+		margin-bottom: 5px;
+	}
+}
+
 @media screen and (max-width: 660px) {
-	.about-bottom > img {
+	.about-bottom {
 		display: none;
 	}
 	.about {
 		padding: 25px 30px;
+	}
+}
+
+@media screen and (max-width:650px) {
+	.music {
+		padding: 35px 20px;
+	}
+}
+
+
+@media screen and (max-width: 581px) {
+	.about {
+		padding: 20px 16px;
+	}
+	.about-top {
+		margin-right: 0px;
+	}
+}
+
+
+@media screen and (max-width:575px) {
+	.album-big img {
+		width: 106px;
+		height: 106px;
+	}
+	.album-small img {
+		width: 106px;
+		height: 106px;
+	}
+	.album-big {
+		max-width: 106px;
+		word-break: break-word;
+	}
+	.album-small {
+		max-width: 106px;
+		word-break: break-word;
+	}
+	.music {
+		max-width: 450px;
+	}
+	iframe {
+		width:100%
+	}
+}
+
+@media screen and (max-width:385px) {
+	.music {
+		padding: 13px 13px;
+	}
+}
+
+@media screen and (max-width:365px) {
+	.music > div {
+		flex-wrap: wrap;
+		justify-content: center !important;
+	}
+	.album-big img {
+		width: 179px;
+		height: 179px;
+	}
+	.album-big {
+		max-width: 179px;
+	}
+	.album-small img {
+		width: 179px;
+		height: 179px;
+	}
+	.album-small {
+		max-width: 179px;
+	}
+	.music > h1 {
+		text-align: center;
+	}
+	.classicButtons-small {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.about-top > div > .classicButtons-small {
+		max-width: 174px;
 	}
 }
